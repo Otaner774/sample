@@ -16,5 +16,10 @@ pipeline {
         sh 'npm test'
       }
     }
+    stage('aprovee') {
+      steps {
+        input(message: 'Se aprueba???', submitter: 'otaner01')
+      }
+    }
   }
 }
