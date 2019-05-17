@@ -21,5 +21,10 @@ pipeline {
         input(message: 'Se aprueba???', submitter: 'otaner01')
       }
     }
+    stage('deploy') {
+      steps {
+        echo 'deploy'
+      }
+    }
   }
 }
